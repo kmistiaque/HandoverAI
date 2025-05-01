@@ -109,8 +109,13 @@
                                 <img src="images/24.png" alt="QSI Analysis 4" loading="lazy">
                             </div>
                         </div>
+                        <div style="margin-top: 30px; text-align: center;">
+                            <a href="https://qos-prediction-end2end.onrender.com/" target="_blank" style="font-size: 18px; color: #007BFF; text-decoration: none; font-weight: bold;">
+                                Check out the QoS of a network using our algorithm
+                            </a>
+                        </div>
                     </div>
-
+                    
                     <div class="research-component">
                         <h3>Classifier-Based Prediction Analysis</h3>
                         <p>The evaluation of the handover prediction model utilized key metrics to assess performance: Precision (TP / (TP + FP)) measures the proportion of correctly predicted positive instances, crucial for minimizing false positives in applications like fraud detection. Recall (TP / (TP + FN)) evaluates the model's ability to identify actual positive cases, vital for scenarios like disease screening where missing positives is costly. F1-score, the harmonic mean of precision and recall (2 × (Precision × Recall) / (Precision + Recall)), balances both metrics, making it ideal for imbalanced datasets. Accuracy ((TP + TN) / (TP + TN + FP + FN)) reflects overall correctness but can be misleading in imbalanced datasets. Ten classification algorithms were tested, incorporating imbalance handling techniques, with performance compared against a baseline model using accuracy, precision, recall, and F1-score, providing insights into the proposed model's effectiveness in enhancing handover prediction.</p>
@@ -256,7 +261,7 @@
 
                     <div class="research-component">
                         <h3>Hybrid Q-Learning Optimization</h3>
-                        <p>To minimize unnecessary handovers and enhance signal quality for moving User Equipment (UE) in LTE networks, a hybrid learning framework combining supervised learning and Q-learning was developed. This model refines handover decisions by integrating a reward function that penalizes poor handovers (based on RSRP, RSRQ, and CINR) and rewards optimal transitions, promoting network stability. During training with 647 data points, the model recorded 276 handover events, refining its policy iteratively. In the evaluation phase, handovers were reduced from 97 to 71, demonstrating effective suppression of redundant transitions while maintaining connectivity. This approach reduces signaling overhead, latency, and energy consumption, improving Quality of Service (QoS) and network efficiency, with potential for extension to 5G networks.</p>
+                        <p>To minimize unnecessary handovers and enhance signal quality for moving User Equipment (UE) in LTE networks, a hybrid learning framework combining supervised learning and Q-learning was developed. This model refines handover decisions by integrating a reward function that penalizes poor handovers (based on RSRP, RSRQ, and CINR) and rewards optimal transitions, promoting network stability. During training with 647 data points, the model recorded 276 handover events, refining its policy iteratively. In the evaluation phase, handovers were reduced from 94 to 71, demonstrating effective suppression of redundant transitions while maintaining connectivity. This approach reduces signaling overhead, latency, and energy consumption, improving Quality of Service (QoS) and network efficiency, with potential for extension to 5G networks.</p>
                         <div class="image-grid grid-1 medium-image">
                             <div class="research-image">
                                 <img src="images/55.png" alt="Q-Learning Framework" loading="lazy">

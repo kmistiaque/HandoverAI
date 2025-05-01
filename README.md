@@ -23,7 +23,7 @@ This project presents a machine learning-based approach to optimize handover dec
 
 ## 🌐 Live URL
 
-🔗 [Deployed Website on Netlify](https://your-netlify-site.netlify.app)  
+🔗 [Deployed Website on Netlify](https://smart-handover-ai.netlify.app/)  
 (*Replace with your actual Netlify URL*)
 
 ---
