@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ML-Driven Handover Optimization</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">ML Research</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#objective">Objective</a></li>
+                <li><a href="#background">Background</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#team">Team</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <h1>Machine Learning-Driven Handover Optimization in LTE networks</h1>
+                <h2>Quality Signal Indicator, Classifier-Based Prediction Analysis and Hybrid Q-Learning</h2>
+            </div>
+        </section>
+
+        <section id="objective" class="section">
+            <div class="container">
+                <h2>Objective</h2>
+                <p>To develop a machine learning-driven framework for optimizing handover management in LTE networks by integrating Quality Signal Indicator (QSI) classification, supervised learning-based handover prediction, and hybrid Q-learning optimization, aiming to minimize unnecessary handovers, enhance signal stability, and improve overall network performance using real-world drive test data.</p>
+            </div>
+        </section>
+
+        <section id="background" class="section">
+            <div class="container">
+                <h2>Background</h2>
+                <p>In the fast-paced world of mobile communications, Long-Term Evolution (LTE) networks form the backbone of seamless connectivity, supporting everything from video streaming to critical real-time applications. However, as users move through dynamic environments—like bustling city streets or high-speed highways—maintaining uninterrupted service becomes a challenge. Handovers, the process of transferring a user's connection between base stations, are critical to ensuring continuous connectivity. Traditional handover methods, reliant on static signal strength thresholds, often lead to inefficiencies such as unnecessary handovers or delayed transitions, resulting in dropped calls, increased latency, and degraded user experience. With the growing complexity of mobile networks and the advent of data-driven technologies, there is a pressing need for intelligent, adaptive solutions to optimize handover decisions.</p>
+                <p></p>
+            </div>
+        </section>
+
+        <section id="motivation" class="section">
+            <div class="container">
+                <h2>Motivation</h2>
+                <div class="motivation-content">
+                    <p>Our journey began with a shared passion for leveraging artificial intelligence to solve real-world problems in telecommunications. As students of Artificial Intelligence at the Islamic University of Technology, we observed how the increasing demand for seamless connectivity in LTE networks was often hampered by outdated handover strategies. This sparked a question: Could machine learning and reinforcement learning transform handover management to deliver a smoother, more reliable user experience?</p>
+
+                    <div class="motivation-section">
+                        <h3>Where we started</h3>
+                        <p>We identified a gap in traditional handover approaches, which struggled to adapt to dynamic network conditions and lacked the predictive power of modern data analytics. The scarcity of real-world datasets further motivated us to conduct drive tests in Dhaka, capturing live LTE signal data to build a robust foundation for our research.</p>
+                    </div>
+
+                    <div class="motivation-section">
+                        <h3>What we built</h3>
+                        <p>We developed a machine learning-driven framework that integrates three key components: a Quality Signal Indicator (QSI) for signal quality assessment, supervised learning models for handover prediction, and a hybrid Q-learning approach for optimization. By combining real-world data with advanced algorithms, we aimed to minimize unnecessary handovers while ensuring seamless connectivity.</p>
+                    </div>
+
+                    <div class="motivation-section">
+                        <h3>What we found</h3>
+                        <p>Our framework significantly reduced redundant handovers—from 97 to 71 in our dataset—while maintaining signal stability. The supervised models, particularly Random Forest and XGBoost, excelled in predicting handover events, with high recall ensuring critical handovers were not missed. The hybrid Q-learning approach further refined decision-making, balancing exploration and exploitation to optimize network performance.</p>
+                    </div>
+
+                    <div class="motivation-section">
+                        <h3>What's next</h3>
+                        <p>This project is just the beginning. We envision extending our framework to 5G networks, incorporating additional parameters like latency and throughput for holistic optimization. By integrating with Self-Organizing Networks and edge computing, we aim to create scalable, real-time solutions that empower next-generation mobile networks.</p>
+                    </div>
+
+                    <div class="motivation-section">
+                        <h3>Why it matters</h3>
+                        <p>This project matters to us because it bridges the gap between theoretical AI and practical network challenges, paving the way for smarter, more efficient communication systems. Our objective was clear: to harness machine learning and reinforcement learning to enhance handover efficiency, reduce network overhead, and improve user experience in LTE networks. Through this work, we hope to contribute to the evolution of intelligent, self-optimizing networks that keep the world connected, no matter where users roam.</p>
+                    </div>
+                </div>
+                <div class="image-grid grid-1 medium-image">
+                    <div class="research-image">
+                        <img src="images/13.png" alt="Motivation 1" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="research" class="section">
+            <div class="container">
+                <h2>Research Components</h2>
+                <div class="research-overview">
+                    <h3>Overview</h3>
+                    <p>In this research, three distinct methodologies were employed to optimize handover management in LTE networks. For the Quality Signal Indicator (QSI) analysis, real-time signal metrics such as Reference Signal Received Power (RSRP), Reference Signal Received Quality (RSRQ), and Carrier-to-Interference-plus-Noise Ratio (CINR) were categorized into four levels—Excellent, Good, Moderate, and Poor—using percentile-based thresholding and unsupervised K-means clustering. This approach, enhanced by Principal Component Analysis (PCA) for dimensionality reduction, enabled robust signal quality assessment through self-supervised learning with nine machine learning classifiers, achieving high accuracy with models like Logistic Regression and SVM. For handover prediction, ten supervised classification models, including Random Forest and XGBoost, were trained on drive test data to predict potential handover events, addressing dataset imbalance with techniques like Random Undersampling, SMOTE, and Tomek Links, and prioritizing recall to minimize missed handovers. Finally, handover optimization was achieved through a hybrid Q-learning framework that integrated Logistic Regression-based action selection with reinforcement learning, reducing unnecessary handovers from 97 to 71 by iteratively updating a Q-table with a reward function designed to penalize poor handover decisions and reward optimal transitions, thereby enhancing network stability and efficiency.</p>
+                </div>
+                <div class="research-grid">
+                    <div class="research-component">
+                        <h3>Quality Signal Indicator (QSI)</h3>
+                        <p>The Quality Signal Indicator (QSI) analysis utilized three features—serving cell RSRP, RSRQ, and CINR—to assess signal quality, categorizing it into four groups: Excellent (>90% quantile), Good (>50%), Moderate (>15%), and Poor (0-15%) using self-supervised learning with percentile-based thresholding. Nine machine learning classifiers were evaluated, with Logistic Regression and SVM achieving the highest accuracy, while AdaBoost performed poorly. Principal Component Analysis (PCA) was applied to reduce dimensionality, followed by K-means clustering with manually initialized centroids based on domain knowledge, to refine signal quality classification. The clustering results, visualized via scatter plots, showed clear category separation, with centroid positions extracted for each group, enabling a robust, data-driven framework for signal quality assessment in LTE networks.</p>
+                        <div class="image-grid grid-2">
+                            <div class="research-image">
+                                <img src="images/21.png" alt="QSI Analysis 1" loading="lazy">
+                            </div>
+                            <div class="research-image">
+                                <img src="images/22.png" alt="QSI Analysis 2" loading="lazy">
+                            </div>
+                            <div class="research-image">
+                                <img src="images/23.png" alt="QSI Analysis 3" loading="lazy">
+                            </div>
+                            <div class="research-image">
+                                <img src="images/24.png" alt="QSI Analysis 4" loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="research-component">
+                        <h3>Classifier-Based Prediction Analysis</h3>
+                        <p>The evaluation of the handover prediction model utilized key metrics to assess performance: Precision (TP / (TP + FP)) measures the proportion of correctly predicted positive instances, crucial for minimizing false positives in applications like fraud detection. Recall (TP / (TP + FN)) evaluates the model's ability to identify actual positive cases, vital for scenarios like disease screening where missing positives is costly. F1-score, the harmonic mean of precision and recall (2 × (Precision × Recall) / (Precision + Recall)), balances both metrics, making it ideal for imbalanced datasets. Accuracy ((TP + TN) / (TP + TN + FP + FN)) reflects overall correctness but can be misleading in imbalanced datasets. Ten classification algorithms were tested, incorporating imbalance handling techniques, with performance compared against a baseline model using accuracy, precision, recall, and F1-score, providing insights into the proposed model's effectiveness in enhancing handover prediction.</p>
+                        <div class="image-grid grid-2">
+                            <div class="research-image">
+                                <img src="images/25.png" alt="Classifier Analysis 1" loading="lazy">
+                            </div>
+                            <div class="research-image">
+                                <img src="images/26.png" alt="Classifier Analysis 2" loading="lazy">
+                            </div>
+                            <div class="research-image">
+                                <img src="images/27.png" alt="Classifier Analysis 3" loading="lazy">
+                            </div>
+                            <div class="research-image">
+                                <img src="images/28.png" alt="Classifier Analysis 4" loading="lazy">
+                            </div>
+                            <div class="research-image">
+                                <img src="images/29.png" alt="Classifier Analysis 5" loading="lazy">
+                            </div>
+                            <div class="research-image">
+                                <img src="images/30.png" alt="Classifier Analysis 6" loading="lazy">
+                            </div>
+                            <div class="research-image">
+                                <img src="images/31.png" alt="Classifier Analysis 7" loading="lazy">
+                            </div>
+                            <div class="research-image">
+                                <img src="images/32.png" alt="Classifier Analysis 8" loading="lazy">
+                            </div>
+                            <div class="research-image">
+                                <img src="images/33.png" alt="Classifier Analysis 9" loading="lazy">
+                            </div>
+                            <div class="research-image">
+                                <img src="images/34.png" alt="Classifier Analysis 10" loading="lazy">
+                            </div>
+                        </div>
+
+                        <div class="confusion-matrices">
+                            <p>The confusion matrices of each classifier are shown for better understanding in the following figures.The left matrix is for baseline model and the right matrix is for proposed model.</p>
+                            
+                            <div class="classifier-results">
+                                <h4>Logistic Regression</h4>
+                                <div class="image-grid grid-2">
+                                    <div class="research-image">
+                                        <img src="images/35.png" alt="Logistic Regression Matrix 1" loading="lazy">
+                                    </div>
+                                    <div class="research-image">
+                                        <img src="images/36.png" alt="Logistic Regression Matrix 2" loading="lazy">
+                                    </div>
+                                </div>
+
+                                <h4>Decision Tree</h4>
+                                <div class="image-grid grid-2">
+                                    <div class="research-image">
+                                        <img src="images/37.png" alt="Decision Tree Matrix 1" loading="lazy">
+                                    </div>
+                                    <div class="research-image">
+                                        <img src="images/38.png" alt="Decision Tree Matrix 2" loading="lazy">
+                                    </div>
+                                </div>
+
+                                <h4>Random Forest</h4>
+                                <div class="image-grid grid-2">
+                                    <div class="research-image">
+                                        <img src="images/39.png" alt="Random Forest Matrix 1" loading="lazy">
+                                    </div>
+                                    <div class="research-image">
+                                        <img src="images/40.png" alt="Random Forest Matrix 2" loading="lazy">
+                                    </div>
+                                </div>
+
+                                <h4>KNN</h4>
+                                <div class="image-grid grid-2">
+                                    <div class="research-image">
+                                        <img src="images/41.png" alt="KNN Matrix 1" loading="lazy">
+                                    </div>
+                                    <div class="research-image">
+                                        <img src="images/42.png" alt="KNN Matrix 2" loading="lazy">
+                                    </div>
+                                </div>
+
+                                <h4>SVM</h4>
+                                <div class="image-grid grid-2">
+                                    <div class="research-image">
+                                        <img src="images/43.png" alt="SVM Matrix 1" loading="lazy">
+                                    </div>
+                                    <div class="research-image">
+                                        <img src="images/44.png" alt="SVM Matrix 2" loading="lazy">
+                                    </div>
+                                </div>
+
+                                <h4>Naive Bayes</h4>
+                                <div class="image-grid grid-2">
+                                    <div class="research-image">
+                                        <img src="images/45.png" alt="Naive Bayes Matrix 1" loading="lazy">
+                                    </div>
+                                    <div class="research-image">
+                                        <img src="images/46.png" alt="Naive Bayes Matrix 2" loading="lazy">
+                                    </div>
+                                </div>
+
+                                <h4>AdaBoost</h4>
+                                <div class="image-grid grid-2">
+                                    <div class="research-image">
+                                        <img src="images/47.png" alt="AdaBoost Matrix 1" loading="lazy">
+                                    </div>
+                                    <div class="research-image">
+                                        <img src="images/48.png" alt="AdaBoost Matrix 2" loading="lazy">
+                                    </div>
+                                </div>
+
+                                <h4>CatBoost</h4>
+                                <div class="image-grid grid-2">
+                                    <div class="research-image">
+                                        <img src="images/49.png" alt="CatBoost Matrix 1" loading="lazy">
+                                    </div>
+                                    <div class="research-image">
+                                        <img src="images/50.png" alt="CatBoost Matrix 2" loading="lazy">
+                                    </div>
+                                </div>
+
+                                <h4>XGBoost</h4>
+                                <div class="image-grid grid-2">
+                                    <div class="research-image">
+                                        <img src="images/51.png" alt="XGBoost Matrix 1" loading="lazy">
+                                    </div>
+                                    <div class="research-image">
+                                        <img src="images/52.png" alt="XGBoost Matrix 2" loading="lazy">
+                                    </div>
+                                </div>
+
+                                <h4>GradientBoost</h4>
+                                <div class="image-grid grid-2">
+                                    <div class="research-image">
+                                        <img src="images/53.png" alt="GradientBoost Matrix 1" loading="lazy">
+                                    </div>
+                                    <div class="research-image">
+                                        <img src="images/54.png" alt="GradientBoost Matrix 2" loading="lazy">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="research-component">
+                        <h3>Hybrid Q-Learning Optimization</h3>
+                        <p>To minimize unnecessary handovers and enhance signal quality for moving User Equipment (UE) in LTE networks, a hybrid learning framework combining supervised learning and Q-learning was developed. This model refines handover decisions by integrating a reward function that penalizes poor handovers (based on RSRP, RSRQ, and CINR) and rewards optimal transitions, promoting network stability. During training with 647 data points, the model recorded 276 handover events, refining its policy iteratively. In the evaluation phase, handovers were reduced from 97 to 71, demonstrating effective suppression of redundant transitions while maintaining connectivity. This approach reduces signaling overhead, latency, and energy consumption, improving Quality of Service (QoS) and network efficiency, with potential for extension to 5G networks.</p>
+                        <div class="image-grid grid-1 medium-image">
+                            <div class="research-image">
+                                <img src="images/55.png" alt="Q-Learning Framework" loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="conclusion" class="section">
+            <div class="container">
+                <h2>Conclusion</h2>
+                <p>This research successfully developed and implemented a machine learning-driven framework to optimize handover management in LTE networks, achieving significant improvements in network efficiency and user experience. By integrating Quality Signal Indicator (QSI) classification, supervised learning-based handover prediction, and hybrid Q-learning optimization, the project reduced unnecessary handovers from 97 to 71 while maintaining seamless connectivity. The QSI analysis provided a robust signal quality assessment, the predictive models ensured high recall to capture critical handover events, and the Q-learning approach enhanced decision-making through a reward-based mechanism. These outcomes demonstrate the power of combining machine learning and reinforcement learning to address real-world telecommunications challenges. The framework lays a strong foundation for future advancements, with potential applications in 5G and beyond, paving the way for intelligent, adaptive, and self-optimizing mobile networks that deliver reliable connectivity in dynamic environments.</p>
+            </div>
+        </section>
+
+        <section id="team" class="section">
+            <div class="container">
+                <h2>About Us</h2>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div class="member-info">
+                            <h3>K M ISTIAQUE</h3>
+                            <p>Student ID: 200021220</p>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-info">
+                            <h3>SADMAN SHAFI IFTY</h3>
+                            <p>Student ID: 200021240</p>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-info">
+                            <h3>SHAFAYET SADIK SOWAD</h3>
+                            <p>Student ID: 200021248</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 ML Research Team. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
